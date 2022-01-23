@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Ground 1</title>
+<style>
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-gap: 40px 40px;
+    height: 500px;
+    width: 800px;
+    align-items: center;
+    justify-items: center;
+    margin:0px 400px 0px 400px;
+}
+.caja1{
+    border: 8px solid black;
+    background-color:blue ; 
+    height: 250px;
+    width: 250px;
+}
+h1{
+    margin-left: 850px; ;
+}
+</style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <div class="contenedor">
+    {% for i in range(0,num1)  %} 
+    <div class="caja1" style="background-color: {{color}};"> </div> 
+    {% endfor %}  
+    </div>
+
+</body>
+</html>
